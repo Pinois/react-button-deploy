@@ -28514,49 +28514,39 @@ var _Button = _interopRequireDefault(require("./Button"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  var button1 = '<Button />';
-  var button2 = '<Button variant="outline" />';
-  var button3 = '<Button variant="text" />';
-  var button4 = '<Button disableShadow />';
-  var button5 = '<Button disabled />';
-  var button6 = '<Button startIcon="add-cart" />';
-  var button7 = '<Button endIcon="add-cart" />';
-  var button8 = '<Button size="sm" />';
-  var button9 = '<Button size="md" />';
-  var button10 = '<Button size="lg" />';
-  var button11 = '<Button color="default" />';
-  var button12 = '<Button color="primary" />';
-  var button13 = '<Button color="secondary" />';
-  var button14 = '<Button color="danger" />';
-  return _react.default.createElement("main", null, _react.default.createElement("h1", null, "Button component"), button1, _react.default.createElement(_Button.default, null, "Default button"), _react.default.createElement("br", null), button2, _react.default.createElement(_Button.default, {
+  return _react.default.createElement("main", null, _react.default.createElement("h1", null, "Button component"), "<Button />", _react.default.createElement(_Button.default, null, "Hello World"), _react.default.createElement("br", null), "<Button variant=\"outline\" />", _react.default.createElement(_Button.default, {
+    label: "Hello Onja",
     variant: "outline"
-  }, "Variant outline"), _react.default.createElement("br", null), button3, _react.default.createElement(_Button.default, {
+  }), _react.default.createElement("br", null), "<Button variant=\"text\" />", _react.default.createElement(_Button.default, {
     variant: "text"
-  }, "Variant text"), _react.default.createElement("br", null), button4, _react.default.createElement(_Button.default, {
+  }, "Variant text"), _react.default.createElement("br", null), "<Button disableShadow />", _react.default.createElement(_Button.default, {
     disableShadow: true
-  }, "Disabled Shadow"), _react.default.createElement("br", null), button5, _react.default.createElement(_Button.default, {
+  }, "Disabled Shadow"), _react.default.createElement("br", null), "<Button disabled />", _react.default.createElement(_Button.default, {
     disabled: true
-  }, "Disabled"), _react.default.createElement("br", null), button6, _react.default.createElement(_Button.default, {
+  }, "Disabled"), "<Button variant=\"text\" disabled />", _react.default.createElement(_Button.default, {
+    variant: "text",
+    disabled: true
+  }, "Disabled text"), _react.default.createElement("br", null), "<Button startIcon=\"add-cart\" />", _react.default.createElement(_Button.default, {
     startIcon: "add-cart"
-  }, "Add Cart"), _react.default.createElement("br", null), button7, _react.default.createElement(_Button.default, {
+  }, "Add Cart"), _react.default.createElement("br", null), "<Button endIcon=\"download\" />", _react.default.createElement(_Button.default, {
     endIcon: "download"
   }, "Download"), _react.default.createElement("br", null), _react.default.createElement("div", {
     className: "container"
-  }, _react.default.createElement("div", null, button8, _react.default.createElement(_Button.default, {
+  }, _react.default.createElement("div", null, "<Button size=\"sm\" />", _react.default.createElement(_Button.default, {
     size: "sm"
-  }, "Small")), _react.default.createElement("div", null, button9, _react.default.createElement(_Button.default, {
+  }, "Small")), _react.default.createElement("div", null, "<Button size=\"md\" />", _react.default.createElement(_Button.default, {
     size: "md"
-  }, "Medium")), _react.default.createElement("div", null, button10, _react.default.createElement(_Button.default, {
+  }, "Medium")), _react.default.createElement("div", null, "<Button size=\"lg\" />", _react.default.createElement(_Button.default, {
     size: "lg"
   }, "Large"))), _react.default.createElement("div", {
     className: "container"
-  }, _react.default.createElement("div", null, button11, _react.default.createElement(_Button.default, {
+  }, _react.default.createElement("div", null, "<Button color=\"default\" />", _react.default.createElement(_Button.default, {
     color: "default"
-  }, "Default color")), _react.default.createElement("div", null, button12, _react.default.createElement(_Button.default, {
+  }, "Default color")), _react.default.createElement("div", null, "<Button color=\"primary\" />", _react.default.createElement(_Button.default, {
     color: "primary"
-  }, "Primary Color")), _react.default.createElement("div", null, button13, _react.default.createElement(_Button.default, {
+  }, "Primary Color")), _react.default.createElement("div", null, "<Button color=\"secondary\" />", _react.default.createElement(_Button.default, {
     color: "secondary"
-  }, "Secondary Color")), _react.default.createElement("div", null, button14, _react.default.createElement(_Button.default, {
+  }, "Secondary Color")), _react.default.createElement("div", null, "<Button color=\"danger\" />", _react.default.createElement(_Button.default, {
     color: "danger"
   }, "Danger Color"))), _react.default.createElement("br", null));
 }
@@ -28603,7 +28593,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64462" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64285" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

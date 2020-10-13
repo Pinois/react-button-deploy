@@ -87,6 +87,10 @@
 	background-color: var(--color-bg-transparent);
 }
 
+.btn--text:disabled {
+	background-color: transparent;
+}
+
 /*
  * *** Button Sizes ***
  */
